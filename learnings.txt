@@ -1,0 +1,13 @@
+WebBaseLoader is a LangChain component that fetches and extracts text content from web pages/URLs.
+
+Simple Use:
+
+Pass it a URL (or list of URLs)
+It downloads the web page and extracts the text content
+Returns structured documents you can use for AI processing
+
+
+loader = WebBaseLoader("https://careers.yash.com/job/Pune-Sr_-Software-Engineer-Python-Job/1362840166/")
+docs = loader.load()  # Fetches & extracts text from that job posting
+
+
